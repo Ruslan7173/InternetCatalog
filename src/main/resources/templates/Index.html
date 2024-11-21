@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<table>
+  <caption>Интернет-Каталог шин</caption>
+  <tr>
+    <!-- colspan  объединяет две колнки -->
+    <!-- <td colspan="2" class="cell">Город</td>    -->
+    <th class="cell">Шина</th>
+    <th class="cell">Сезонность</th>
+    <th class="cell">Цена</th>
+
+
+  </tr>
+
+  <tr>
+    <td class="cell">Pirelli</td>
+    <td class="cell">Зима</td>
+    <td class="cell">5000</td>
+
+  </tr>
+  <tr>
+    <!-- <td rowspan="2" class="cell">Город2</td> объединяет ячейки в столбце -->
+
+    <td class="cell">Nokian</td>
+    <td class="cell">Зима</td>
+    <td class="cell">6000</td>
+  </tr>
+  <tr>
+    <td class="cell">Continental</td>
+    <td class="cell">Зима</td>
+    <td class="cell">7000</td>
+  </tr>
+  <button id = "butt2" type = "submit" >Смотреть Nokian</button>
+  <tr>
+  <button id = "butt3" type = "submit" >Смотреть Continental</button>
+  <tr>
+  <button id = "butt1" type = "submit" >Смотреть Pirelli</button>
+  <tr>
+
+
+
+</table>
+<p th:each="line : ${list}">
+
+
+
+</body>
+</html>
